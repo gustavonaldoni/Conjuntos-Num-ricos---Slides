@@ -11,6 +11,8 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\N}{\mathbb{N}}
 
+\newcommand{\conj}[1]{\left\{ #1 \right\}}
+
 \newtheorem{theo}{Teorema}
 \newtheorem{ex}{Exemplo}
 
@@ -231,22 +233,99 @@ Diferença de conjuntos:
 
     \begin{multicols}{2}
         \begin{enumerate}[a]
-            \item $\{ x \in \R \mid -3 \leq x < 2 \}$
+            \item $\{ x \in \R \mid -3 \leq x < 1 \}$
             \item $\{ x \in \R \mid  3x < 9 \}$
             \item $\{ x \in \R \mid 1 \leq x \leq 2 \}$
-            \item 
-            \item
-            \item
-            \item
-            \item 
+            \item $\{ x \in \R \mid 5x - 7 \geq 8 \}$
+            \item $\{ x \in \R \mid -1 < x \leq 3 \}$
+            \item $\{ x \in \R \mid x^2 - 4x + 3 \leq 0 \}$
+            \item $\{ x \in \R \mid x > -2 \}$
+            \item $\{ x \in \R \mid x \leq 1 \}$
         \end{enumerate}
     \end{multicols}
-    
+
+    \vspace{5.0cm}
+
+    \item Para cada $n \in \N$ seja $D_n = \left(0, \dfrac{1}{n} \right)$ onde $\left(0, \dfrac{1}{n} \right)$ representa o intervalo aberto de extremos 0 e $\dfrac{1}{n}$. O conjunto diferença $D_3 - D_{20}$ é igual a:
+
+    \begin{multicols}{2}
+        \begin{enumerate}[a]
+            \item $D_3$
+            \item $D_20$
+            \item $\left(\dfrac{1}{2}, \dfrac{1}{3} \right)$
+            \item $\left[\dfrac{1}{2}, \dfrac{1}{3} \right)$
+            \item $D_{20} \cup D_3$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{5.0cm}
+
+    \item Determine o conjunto resultante para cada operação abaixo:
+
+    \begin{multicols}{2}
+        \begin{enumerate}[a]
+            \item $\N \cup \Z$
+            \item $\Z \cup \Q$
+            \item $\Q \cup \R$
+            \item $\Q \cup \I$
+            \item $\N \cap \Z$
+            \item $\Z \cap \Q$
+            \item $\Q \cap \R$
+            \item $\Q \cap \I$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{5.0cm}
+
+    \item Dados os conjuntos $A = \conj{-1, 2}$ e $B = \conj{\dfrac{1}{2}, -1}$, determinar o conjunto $X$ tal que:
+
+    \begin{equation*}
+        X = \conj{[((A \cap B) \cup \R) \cap \Q] \cap \Z} \cap B
+    \end{equation*}
+
+    \vspace{5.0cm}
+
+    \item Dados os conjuntos $A = \conj{\dfrac{1}{2}, \dfrac{3}{5}}$ e $B = \conj{\dfrac{1}{3}, -1, -2}$, determinar o conjunto $X$ tal que:
+
+    \begin{equation*}
+        X = \conj{[(A \cap \Z) \cup B] \cap \Z} \cap \Q - \conj{1, -1}
+    \end{equation*}
 \end{enumerate}
 
+\end{frame}
 
-    
-    
+\begin{frame}{Respostas dos exercícios}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Verdadeiros: a, e, f, h, i e j. Falsos: b, c, d, g, l e k.
+            \item $A, B, C, E$ e $G$ são vazios. $D = \conj{3}$, $F = \conj{1}$ e $H = \conj{1}$.
+            \item 
+                \begin{enumerate}[a]
+                    \item $[-3, -1)$
+                    \item $(-\infty, 3)$
+                    \item $[1, 2]$
+                    \item $[3, \infty)$
+                    \item $(-1, 3]$
+                    \item $[-1, 3]$
+                    \item $(-2, \infty)$
+                    \item $(-\infty, 1]$
+                \end{enumerate}
+            \item d.
+            \item 
+                \begin{enumerate}[a]
+                    \item $\Z$
+                    \item $\Q$
+                    \item $\R$
+                    \item $\R$
+                    \item $\N$
+                    \item $\Z$
+                    \item $\Q$
+                    \item $\varnothing$
+                \end{enumerate}
+            \item $X = \conj{-1}$
+            \item $X = \conj{-2}$
+        \end{enumerate}
+    \end{multicols}
 \end{frame}
 
 \end{document}
