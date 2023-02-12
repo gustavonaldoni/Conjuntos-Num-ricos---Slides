@@ -13,6 +13,8 @@
 
 \newcommand{\conj}[1]{\left\{ #1 \right\}}
 
+\input{representacaoRetaReal.tex}
+
 \newtheorem{theo}{Teorema}
 \newtheorem{ex}{Exemplo}
 
@@ -90,6 +92,28 @@
     \vspace{5.0cm}
 
     \item É evidente que $\N \subset \Z \subset \Q \subset \R$.
+
+    \vspace{1cm} 
+
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0, 0) circle (0.3cm);
+            \draw node at (0,0) {\scriptsize $\N$};
+            
+            \draw (0, 0) circle (0.8cm);
+            \draw node at (0, 0.5) {\scriptsize $\Z$};
+            
+            \draw (0, 0) circle (1.3cm);
+            \draw node at (0, 1) {\scriptsize $\Q$};
+
+            \draw (1.65, 0) circle (0.2cm);
+            \draw node at (1.65, 0) {\scriptsize $\I$};
+            
+            \draw (0, 0) circle (2.0cm);
+            \draw node at (0, 1.6) {\scriptsize $\R$};
+            
+        \end{tikzpicture}
+    \end{center}
 \end{itemize}
 \end{frame}
 
@@ -123,23 +147,23 @@
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Intervalos numéricos}
-    
+        \input{tabelaIntervalos.tex}
 \end{frame}
 
-\begin{frame}[allowframebreaks]{Noções de conjuntos}
+\begin{frame}{Noções de conjuntos}
 
 \begin{itemize}
-    \item Conjunto unitário: é aquele formado por um único elemento. 
+    \item Conjunto unitário: é aquele formado por um único elemento.  
     
     \item Exemplo: $A = \{ x \in \Z_+ \mid x^2 = 1 \}$ é unitário, pois $A = \{ 1 \}$.
 
-    \vspace{5.0cm}
-
-    \item Conjunto vazio: é aquele que não possui elementos.
+    \vspace{0.75cm}
     
+    \item Conjunto vazio: é aquele que não possui elementos.
+
     \item Notação: $\varnothing$ ou $\{ \}$.
 \end{itemize}
-
+    
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Operações de conjuntos}
